@@ -1,0 +1,87 @@
+[
+  {
+    "name": "chore",
+    "color": "fef2c0",
+    "description": "Meta-task that don't effect the codebase."
+  },
+  {
+    "name": "documentation",
+    "color": "fef2c0",
+    "description": "Project and API documentation."
+  },
+  {
+    "name": "copy",
+    "color": "c5def5",
+    "description": "The text users see in the app."
+  },
+  {
+    "name": "design:arch",
+    "color": "5319e7",
+    "description": "Application architecture design."
+  },
+  {
+    "name": "design:UI",
+    "color": "5319e7",
+    "description": "Design of the User Interface."
+  },
+  {
+    "name": "design:UX",
+    "color": "5319e7",
+    "description": "Improvements to the User Experience."
+  },
+  {
+    "name": "enhancement:feature",
+    "color": "0e8a16",
+    "description": "Addition of new features."
+  },
+  {
+    "name": "enhancement:optimization",
+    "color": "0e8a16",
+    "description": "Issues that relate to performance."
+  },
+  {
+    "name": "problem:bug",
+    "color": "d93f0b",
+    "description": "Problems that cause unintended behavior."
+  },
+  {
+    "name": "problem:security",
+    "color": "d93f0b",
+    "description": "Security flaws."
+  },
+  {
+    "name": "problem:production",
+    "color": "b60205",
+    "description": "Problems that exist on production servers."
+  },
+  {
+    "name": "question",
+    "color": "d4c5f9",
+    "description": "Questions related to the project."
+  },
+  {
+    "name": "discussion",
+    "color": "d4c5f9",
+    "description": "An issue that's meant to serve as a forum of discussion."
+  },
+  {
+    "name": "duplicate",
+    "color": "6c656b",
+    "description": "An issue with the same requirements already exists."
+  },
+  {
+    "name": "needs more info",
+    "color": "6c656b",
+    "description": "Issue is unclear."
+  },
+  {
+    "name": "wont fix",
+    "color": "6c656b",
+    "description": "No action needed."
+  },
+  {
+    "name": "out of scope",
+    "color": "6c656b",
+    "description": "The story is wasn't agreed to in scope of work."
+  }
+]

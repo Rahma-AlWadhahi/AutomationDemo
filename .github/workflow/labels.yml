@@ -1,0 +1,29 @@
+name: Import labels
+on:
+  workflow_dispatch:
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: checkout source files
+        uses: actions/checkout@v2
+
+      - name: use node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: install dependencies
+        run: npm i github-label-template
+
+      - name: import labels
+        if: github.ref == 'refs/heads/master'
+        run: |
+          npx ghlbl -o ${{ github.repository_owner }} -r ${{ github.event.repository.name }} -t ${{ secrets.GITHUB_TOKEN }} -d
+          npx ghlbl -o ${{ github.repository_owner }} -r ${{ github.event.repository.name }} -t ${{ secrets.GITHUB_TOKEN }} -i labels.json
